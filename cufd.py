@@ -32,7 +32,7 @@ def get_cufd(client, cuis, nit):
 
 def handle_cufd_response(response):
     if getattr(response, 'transaccion', False):
-        print("CUFD generado exitosamente:")
+        print("CUFD se ha generado exitosamente:")
         print("Código CUFD:", getattr(response, 'codigo', 'No disponible'))
         print("Código de Control:", getattr(response, 'codigoControl', 'No disponible'))
         print("Dirección:", getattr(response, 'direccion', 'No disponible'))
